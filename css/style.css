@@ -1,0 +1,50 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&family=Open+Sans:wght@300;400&family=Roboto:wght@400;700&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* main style */
+.nav{
+    background-color: white;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#botonera:hover{
+    font-size: 1.1rem;
+    color: rgb(141, 203, 40);
+}
+
+.main{
+    background-color: gray;
+    height: 80vh;
+}
+
+.figcaption{
+    font-size: 1.5rem;
+    background-color: rgba(15, 15, 15, 0.75);
+}
+
+.footer{
+    background-color: rgb(150, 170, 30);
+    height: auto;
+    border: 1px solid black;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer img{
+    height: 50px;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
