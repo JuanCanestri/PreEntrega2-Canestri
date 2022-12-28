@@ -15,6 +15,8 @@ Index
 
 3D rendering
 
+-Galeria de imagenes con Grid y responsive, se convierte en dos columnas para tablet y en 1 columna para mobile.
+
 About Us
 
 Contact

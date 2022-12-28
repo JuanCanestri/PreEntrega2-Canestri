@@ -8,6 +8,7 @@
 /* main style */
 .nav{
     background-color: white;
+    box-sizing: border-box;
     height: auto;
     width: 100%;
     margin: 0;
@@ -16,13 +17,13 @@
 }
 
 #botonera:hover{
-    font-size: 1.1rem;
+    font-weight: 550;
     color: rgb(141, 203, 40);
 }
 
 .main{
-    background-color: gray;
-    height: 80vh;
+    background-color: white;
+    height: auto;
 }
 
 .figcaption{
@@ -37,6 +38,7 @@
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    z-index: 1000;
 }
 
 footer img{
@@ -47,4 +49,113 @@ footer img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flex-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-align{
+    text-align: center;
+}
+
+/* style about us */
+
+.figure{
+    background-color: rgb(150, 170, 30);
+    border-radius: 10px;
+}
+
+.figure_border{
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.figure_size{
+    max-width: 540px;
+}
+
+.flex-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* style contact */
+
+.form{
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.map{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* grid 3d rendering */
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+.gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item:nth-child(4){
+    grid-column-start: span 2;
+}
+
+.gallery-item:nth-child(5){
+    grid-row-start: span 2;
+}
+
+.gallery-item:nth-child(10){
+    grid-row-start: span 2;
+}
+
+.gallery-item:nth-child(11){
+    grid-column-start: span 2;
+}
+
+/* responsive */
+
+@media (max-width:768px) {
+    .gallery-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-item:nth-child(3){
+        grid-column-start: span 2;
+    }
+    
+    .gallery-item:nth-child(9){
+        grid-row-start: span 2;
+    }
+    
+    .gallery-item:nth-child(10){
+        grid-row-start: span 2;
+    }
+    
+    .gallery-item:nth-child(8){
+        grid-column-start: span 2;
+    }
+
+    .text-align{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:576px) {
+    .gallery-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
