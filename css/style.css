@@ -5,6 +5,14 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Animacion logo */
+
+.logo:hover{
+    transform: scale(1.025);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
 /* main style */
 .nav{
     background-color: white;
@@ -19,6 +27,7 @@
 #botonera:hover{
     font-weight: 550;
     color: rgb(141, 203, 40);
+    transition: all 0.25s;
 }
 
 .main{
@@ -55,6 +64,7 @@ footer img{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 350px;
 }
 
 .text-align{
@@ -64,7 +74,7 @@ footer img{
 /* style about us */
 
 .figure{
-    background-color: rgb(150, 170, 30);
+    background: linear-gradient(to left, rgba(150, 170, 30, 0.8), rgba(255, 255, 255, 0.1));
     border-radius: 10px;
 }
 
@@ -78,6 +88,7 @@ footer img{
 }
 
 .flex-card{
+    height: 70vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -158,4 +169,22 @@ footer img{
     .gallery-container{
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+/* Form */
+
+.button{
+    background-color: rgb(150, 170, 30);
+}
+
+.text-deco{
+    font-size: 1.5rem;
+}
+
+/* 3d Modeling */
+
+.galeria-modeling{
+    display: flex;
+    justify-content: center;
+    height: auto;
 }
